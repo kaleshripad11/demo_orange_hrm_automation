@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="orange_hrm">
+    <listeners>
+        <listener class-name="utilities.ReportManager"></listener>
+    </listeners>
+    <test name="orange_hrm" thread-count="1">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.TC_001_Login"></class>
+        </classes>
+    </test>
+</suite>
