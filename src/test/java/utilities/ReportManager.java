@@ -50,7 +50,7 @@ public class ReportManager implements ITestListener {
         tests = reports.createTest(result.getName());
         tests.assignCategory(result.getMethod().getGroups());
         tests.log(Status.FAIL, "Failed Test : " + result.getName());
-        tests.log(Status.INFO, "Failed Test Exception : " + result.getThrowable());
+        tests.log(Status.INFO, "Failed Test Exception : " + result.getThrowable().getMessage());
         try{
             //String failedCaseScreen = Test_Base.captureScreenshots(result.getName());
             String failedCaseScreen = new Test_Base().captureScreenshots(result.getName());

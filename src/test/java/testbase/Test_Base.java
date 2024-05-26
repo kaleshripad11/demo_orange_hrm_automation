@@ -60,11 +60,12 @@ public class Test_Base {
         File source = takess.getScreenshotAs(OutputType.FILE);
 
         // Only for debugging
-        String filepath = System.getProperty("user.dir")+"/screenshots/";
+        // String filepath = System.getProperty("user.dir")+"/screenshots/";
+        String filepath = "/Users/shripadkale/Documents/Selenium_Java/Demo_OrangeHRM_Automation/screenshots/";
         //log.info("Screenshot file path : "+filepath);
 
         // Set file path
-        File destination = new File( filepath + testName+ "-"+ timeStamp + ".png");
+        File destination = new File( filepath + testName + "-"+ timeStamp + ".png");
         // System.getProperty("user.dir")+"/screenshots/" + testName+ "-"+ timeStamp + ".png";
 
         try {
